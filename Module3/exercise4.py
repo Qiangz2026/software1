@@ -5,7 +5,7 @@ sum_of_numbers = num1 + num2 + num3
 product_of_numbers = num1*num2*num3
 average_of_numbers = (num1 + num2 + num3)/3
 #print("The sum of the numbers: " + str(sum_of_numbers))
-print(f"The sum of the numbers: {product_of_numbers}")
+print(f"The sum of the numbers: {sum_of_numbers}")
 #print("The product of the numbers: " + str(product_of_numbers))
 print(f"The product of the numbers: {product_of_numbers}")
 #print("The average of the numbers: " + str(average_of_numbers))
