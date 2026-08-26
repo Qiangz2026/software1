@@ -1,4 +1,4 @@
-# rounds = int(input("Enter the amount of greetingss time: ")) #Remember to convert the variable type.
+# rounds = int(input("Enter the amount of greetings time: ")) #Remember to convert the variable type.
 # finish_rounds = 0
 # while finish_rounds < rounds:
 #     print("Good morning.")
@@ -17,8 +17,10 @@ while first <= 5:
         product = first * second
         #print(str(first) + " times " + str(second) + " is " + str(product))
         print(f"{first} times {second} is {product}")
-        second = second + 1
-    first = first + 1
+        second += 1
+        # second = second + 1
+    # first = first + 1
+    first += 1
 
 # import math
 

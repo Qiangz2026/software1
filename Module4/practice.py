@@ -1,8 +1,10 @@
-# money = float(input("Enter your money: "))
-# if(money >= 5):
-#     print("you can buy a latte.")
-# else:
-#     print("Your money is not enough.")
+money = float(input("Enter your money: "))
+if money >= 5:
+    print("you can buy a latte.")
+elif not money:
+    print("No money.")
+else:
+    print("Your money is not enough.")
 
 
 # cat = input("Enter the name of the cat: ")
@@ -18,12 +20,13 @@
 # else:
 #     print("Medicine cannot be used.")
 
-age = float(input("Enter your age: "))
-if age >= 65:
-    print("Your are retired.")
-elif age > 18:
-    print("You are working-aged.")
-elif age >= 7:
-    print("You are in school.")
-else:
-    print("You are a small child.")
+# age = float(input("Enter your age: "))
+# if age >= 65:
+#     print(age >= 65)    #output is True or False
+#     print("Your are retired.")
+# elif age > 18:
+#     print("You are working-aged.")
+# elif age >= 7:
+#     print("You are in school.")
+# else:
+#     print("You are a small child.")
