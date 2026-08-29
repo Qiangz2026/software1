@@ -1,6 +1,6 @@
 game_name = "My Day!"
 print(f"Welcome to {game_name}")
-name  = input("Hi, enter your name here: ")
-age = input("Please also enter your age: ")
-print(name)
-print(age)
+player_name  = input("Hi, enter your name here: ")
+player_age = input("Please also enter your age: ")
+print(player_name)
+print(player_age)
