@@ -2,7 +2,7 @@ def get_season(month_number):
     season_tuple = ("winter", "spring", "summer", "autumn")
     if 3 <= month_number <= 5:
         season = season_tuple[1]
-    elif 5 <= month_number <= 8:
+    elif 6 <= month_number <= 8:
         season = season_tuple[2]
     elif 9 <= month_number <= 11:
         season = season_tuple[3]
