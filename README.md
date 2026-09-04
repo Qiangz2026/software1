@@ -25,3 +25,11 @@ I completed exercises of module6.
 ## Module 7
 
 I completed exercises of module7.
+
+## Module 8
+
+I completed exercises of module8.
+
+## Module 9
+
+I completed exercises of module9.
