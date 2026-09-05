@@ -1,3 +1,3 @@
-# My Day!
+# Finnish language challenge!
 
 **Qiang Zhang**

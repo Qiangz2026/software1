@@ -1,4 +1,4 @@
-game_name = "My Day!"
+game_name = "Finnish language challenge!"
 print(f"Welcome to {game_name}")
 player_name  = input("Hi, enter your name here: ")
 player_age = input("Please also enter your age: ")
