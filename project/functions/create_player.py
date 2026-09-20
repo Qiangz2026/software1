@@ -1,4 +1,5 @@
-def create_player():
-    player_name  = input("Hi, enter your name here: ")
-    player_age = int(input("Please also enter your age: "))
-    player_level = input("Please enter your Finnish level: ")
+class Create_player:
+    def __init__(self, name, age, finnish_level):
+        self.name = name
+        self.age = age
+        self.finnish_level = finnish_level
