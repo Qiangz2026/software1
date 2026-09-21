@@ -1,6 +1,6 @@
 #Custom Finnish library
 
-def finnish_library():
+def finnish_library(player):
     print("You can customize your own Finnish language library here.")
     words = []
     word = input("Please enter the word you would like to add(Press Enter to finish adding.): ")
@@ -10,4 +10,4 @@ def finnish_library():
         word = input("Please enter the word you would like to add(Press Enter to finish adding.): ")
     else:
         print("You have successfully created your own Finnish language library.")
-    return words
+    player.custom_finnish_library = words

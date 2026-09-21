@@ -1,5 +1,5 @@
 #Pass a `player` parameter to the function—containing the player's name, age, and Finnish level—and match the vocabulary library based on that level.
-def start_game():
+def start_game(player):
     print("Firstly please read the challenge_introduction carefully")
     with open("challenge_introduction.txt", "r") as file:
         data = file.read()
