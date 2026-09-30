@@ -1,4 +1,4 @@
-from functions import menu, game_introduction, Create_player, start_game, exit_game 
+from functions import menu, game_introduction, Player, start_game, exit_game 
 
 game_name = "Finnish learning challenge!"
 print(f"Welcome to {game_name}")
@@ -10,10 +10,10 @@ else:
     print(f"Hi, {player_name}. Welcome to the game.")
     finnish_level = input("Please also enter your Finnish level here(A1.1, A1.2, A1.3, B1, B2): ")
     interest = input("Please enter here your interest about Finnish words(Nature, Culture, Life):")
-    player = Create_player(player_name, player_age, finnish_level, interest)#create player using class Create_player
+    player = Player(player_name, player_age, finnish_level, interest)#create player using class Create_player
+    print("Thank you for the information and the player is created now!")
     print("Here is the menu for you!")
     choice = menu()
-    #current_words = []#Initial list of the custom finnish library
     game_process = True
     while game_process:
         if choice == "1":
@@ -21,8 +21,9 @@ else:
             choice = menu()#Display the menu to the player again after they finish reading the game instructions.
         elif choice == "2":
             player.show_information()
+            choice = menu()
         elif choice == "3":
-            player.custom_finnish_library()
+            player.build_finnish_library()
             choice = menu()
         elif choice == "4":
             start_game(player)

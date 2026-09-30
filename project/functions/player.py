@@ -1,4 +1,4 @@
-class Create_player:
+class Player:
     def __init__(self, name, age, finnish_level, interest):
         self.name = name
         self.age = age
@@ -12,7 +12,7 @@ class Create_player:
         print(f"Finnish level: {self.finnish_level}")
         print(f"Interest: {self.interest}")
 
-    def custom_finnish_library(self):
+    def build_finnish_library(self):
         print("You can customize your own Finnish language library here.")
         finnish_word = input("Please enter the word you would like to add(Press Enter to finish adding.): ")
         while finnish_word != "":
@@ -20,7 +20,7 @@ class Create_player:
             self.custom_finnish_library[finnish_word] = word_meaning
             print(f"The word {finnish_word} has been successfully added.")
             finnish_word = input("Please enter the word you would like to add(Press Enter to finish adding.): ")
-            word_meaning = input("Please also enter the meaning of the word here: ")
+            # 6word_meaning = input("Please also enter the meaning of the word here: ")
         else:
             print("You have successfully created your own Finnish language library.")      
             print(self.custom_finnish_library) 
@@ -39,4 +39,11 @@ class Create_player:
                     continue
                 elif answer == "n":
                     break
-    
+            else:
+                print("Sorry, the meaning is wrong.")
+                print (f"Would you like to check the correct meaning of {word}? or you want try again")
+                choice = input("1. check the meaning\n2. try again")
+                if choice == "1":
+                    print(f"The correct meaning of {word} is {self.custom_finnish_library[word]}")
+                elif choice == "2":
+                    meaning = input(f"Please enter the meaning of finnish word {word}: ")
