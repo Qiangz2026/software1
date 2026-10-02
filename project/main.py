@@ -1,4 +1,4 @@
-from functions import menu, game_introduction, Player, start_game, exit_game 
+from functions import menu, game_introduction, Player, start_game, save_exit, load_player
 
 game_name = "Finnish learning challenge!"
 print(f"Welcome to {game_name}")
@@ -8,10 +8,12 @@ if player_age < 12:
     print("Sorry, you are a minor. Please close the game.")
 else:
     print(f"Hi, {player_name}. Welcome to the game.")
-    finnish_level = input("Please also enter your Finnish level here(A1.1, A1.2, A1.3, B1, B2): ")
-    interest = input("Please enter here your interest about Finnish words(Nature, Culture, Life):")
-    player = Player(player_name, player_age, finnish_level, interest)#create player using class Create_player
-    print("Thank you for the information and the player is created now!")
+    player = load_player()
+    if player == None:
+        finnish_level = input("Please also enter your Finnish level here(A1.1, A1.2, A1.3, B1, B2): ")
+        interest = input("Please enter here your interest about Finnish words(Nature, Culture, Life):")
+        player = Player(player_name, player_age, finnish_level, interest)
+        print("Thank you for the information and the player is created now!")
     print("Here is the menu for you!")
     choice = menu()
     game_process = True
@@ -32,7 +34,7 @@ else:
             player.practice_library()
             choice = menu()
         elif choice == "6":
-            exit_game()
+            save_exit(player)
             game_process = False
         else:
             print("Your input is wrong, please try again.")
