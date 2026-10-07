@@ -23,5 +23,4 @@ def start_game(player):
         elif choice == "4":
             break
         else:
-            print("Invalid input, please enter your choice again.")
-        
+            print("Invalid input, please enter your choice again.")     
