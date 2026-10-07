@@ -19,9 +19,9 @@ project/
 ├── readme.md
 └── functions/
     ├── __init__.py
-    ├── load_player.py
-    ├── create_player.py
-    ├── menu.py
+    ├── load_player.py(load old player, if there is.)
+    ├── create_player.py(create new player)
+    ├── menu.py(show the main menu)
     ├── game_introduction.py
     ├── player.py (player class, Initializes player information and includes functions for modifying player information, customizing the Finnish vocabulary library and practice vocabulary library.)
     ├── start_game.py (Provides the challenge selection menu.)
