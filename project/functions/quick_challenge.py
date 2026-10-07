@@ -1,5 +1,5 @@
 from finnish_word import random_words
-from functions.run_challenge import run_challenge
+from .run_challenge import run_challenge
 
 def quick_challenge(player):
     print(f"Hi, player.name. Welcome to the challenge!")

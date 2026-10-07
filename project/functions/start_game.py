@@ -1,9 +1,9 @@
 #This function shows challenge_introduction to the player by reading the introduction txt.
 #Also player can choose the challenge that he wants to take from three challenges.
 
-from functions.level_challenge import level_challenge
-from functions.interest_challenge import interest_challenge
-from functions.quick_challenge import quick_challenge
+from .level_challenge import level_challenge
+from .interest_challenge import interest_challenge
+from .quick_challenge import quick_challenge
 
 def start_game(player):
     print("Firstly please read the challenge_introduction carefully!")

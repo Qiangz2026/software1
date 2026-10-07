@@ -4,8 +4,8 @@
 
 from finnish_word import nature_words, life_words, culture_words
 from finnish_word import food_words, sports_words
-from functions.run_challenge import run_challenge
-from functions.learn_words import learn_words
+from .run_challenge import run_challenge
+from .learn_words import learn_words
 
 def interest_challenge(player):
     print(f"Hi, {player.name}. Welcome to the level challenge!")

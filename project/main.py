@@ -1,10 +1,10 @@
-from functions.menu import menu
-from functions.load_player import load_player
-from functions.game_introduction import game_introduction
-from functions.player import Player
-from functions.start_game import start_game
-from functions.save_exit_game import save_exit
-from functions.create_player import create_player
+from functions import menu
+from functions import load_player
+from functions import game_introduction
+from functions import Player
+from functions import start_game
+from functions import save_exit
+from functions import create_player
 #The main function is responsible for loading existing players or creating new player, and displaying a menu that allows the player to access the program's various modules.
 
 game_name = "Finnish learning and challenge game!"

@@ -1,4 +1,4 @@
-from functions.player import Player
+from .player import Player
 
 def create_player():
     player_name  = input("Hi, enter your name here: ")

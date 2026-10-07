@@ -1,6 +1,6 @@
 #This function saves the information of the player and exit the game successfully.
 
-from functions import menu
+from .menu import menu
 import json
 
 def save_exit(player):

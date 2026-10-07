@@ -1,6 +1,6 @@
 import os
 import json
-from functions.player import Player
+from .player import Player
 
 def load_player():
     if os.path.exists("player_data.json"):
