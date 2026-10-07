@@ -1,2 +1,5 @@
 Welcome to the challenge!
-You can choose a theme that suits your preferences (including nature, daily life, culture, or a mix). We will generate a vocabulary list at the appropriate difficulty level based on your initial Finnish proficiency; to successfully complete a challenge, you simply need to learn at least ten words.
+We offer three types of challenges for you to choose from.
+Each challenge presents questions randomly selected from the word bank; a round consists of five questions, and you succeed by answering at least four correctly.
+For the "Level" and "Interest" challenges, you have the option to study the words in the words library before attempting the challenge or to dive straight into the challenge.
+Good luck!
