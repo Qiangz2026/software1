@@ -8,7 +8,8 @@ from functions.run_challenge import run_challenge
 from functions.learn_words import learn_words
 
 def level_challenge(player):
-    print("Welcome to the level challenge!")
+    print(f"Hi, {player.name}. Welcome to the level challenge!")
+    player.finnish_level = player.finnish_level.upper()
     if player.finnish_level == "0":
         challenge_words = level_0_words
     elif player.finnish_level == "A1":
@@ -21,12 +22,12 @@ def level_challenge(player):
         challenge_words = level_b2_words
     print("Do you want to study all the words first before taking on the challenge, or start the challenge right away?")
     while True:
-        choice = input("Please choose:\n1. Learn words\n2. Start challenge right now.")
+        choice = input("1. Learn words\n2. Start challenge right now.\nPlease choose:")
         if choice == "1":
             learn_words(player, challenge_words)
         elif choice == "2":
-            print(f"Your current level is {player.finnish_level}, now generating the corresponding challenge for you.")
+            print(f"Your current finnish level is {player.finnish_level}, now generating the corresponding challenge for you.")
             run_challenge(player, challenge_words)
-            break 
+            break
         else:
             print("Invalid input, please choose again.")

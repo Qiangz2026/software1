@@ -5,6 +5,7 @@ from functions.player import Player
 from functions.start_game import start_game
 from functions.save_exit_game import save_exit
 from functions.create_player import create_player
+#The main function is responsible for loading existing players or creating new player, and displaying a menu that allows the player to access the program's various modules.
 
 game_name = "Finnish learning and challenge game!"
 print(f"Welcome to {game_name}")
@@ -26,7 +27,7 @@ while game_process:
         choice = menu()
     elif choice == "4":
         start_game(player)
-        game_process = False
+        choice = menu()
     elif choice == "5":
         player.practice_library()
         choice = menu()

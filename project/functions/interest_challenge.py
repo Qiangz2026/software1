@@ -8,7 +8,8 @@ from functions.run_challenge import run_challenge
 from functions.learn_words import learn_words
 
 def interest_challenge(player):
-    print("Welcome to the level challenge!")
+    print(f"Hi, {player.name}. Welcome to the level challenge!")
+    player.interest = player.interest.lower()
     if player.interest == "nature":
         challenge_words = nature_words
     elif player.interest == "life":
@@ -21,7 +22,7 @@ def interest_challenge(player):
         challenge_words = sports_words
     print("Do you want to study all the words first before taking on the challenge, or start the challenge right away?")
     while True:
-        choice = input("Please choose:\n1. Learn words\n2. Start challenge right now.")
+        choice = input("1. Learn words\n2. Start challenge right now\nPlease choose:")
         if choice == "1":
             learn_words(player, challenge_words)
         elif choice == "2":

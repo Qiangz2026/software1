@@ -40,10 +40,13 @@ class Player:
         finnish_word = input("Please enter the word you would like to add(Press Enter to finish adding.): ")
         while finnish_word != "":
             word_meaning = input("Please also enter the meaning of the word here: ")
-            self.custom_finnish_library[finnish_word] = word_meaning
-            print(f"The word {finnish_word} has been successfully added.")
+            confirm = input(f"Are you sure to add {finnish_word}: {word_meaning} to the library?(y/n)")
+            if confirm == "y":
+                self.custom_finnish_library[finnish_word] = word_meaning
+                print(f"The word {finnish_word} has been successfully added.")
+            else:
+                print(f"Word {finnish_word} is not added, please add again.")
             finnish_word = input("Please enter the word you would like to add(Press Enter to finish adding.): ")
-            # 6word_meaning = input("Please also enter the meaning of the word here: ")
         else:
             print("You have successfully created your own Finnish language library.")      
             print(self.custom_finnish_library) 
@@ -53,25 +56,17 @@ class Player:
         if not self.custom_finnish_library:
             print("The Finnish library is empty now!")
             print("Please create your own Finnish library first.")
+            return
         for word in self.custom_finnish_library:#Iterate over the keys in the dictionary
             print(word)
-            while True:
-                meaning = input(f"Please enter the meaning of finnish word {word}: ")
-                if self.custom_finnish_library[word] == meaning:
-                    print("Right!")
-                    answer = input("Do you want to continue practicing?(y/n):")
-                    if answer == "y":
-                        break
-                    elif answer == "n":
-                        return   
-                else:
-                    print("Sorry, the meaning is wrong.")
-                    print (f"Would you like to check the correct meaning of {word}? or you want try again")
-                    choice = input("1. check the meaning\n2. try again\nPlease choose: ")
-                    if choice == "1":
-                        print(f"The correct meaning of {word} is {self.custom_finnish_library[word]}")
-                        break
-                    elif choice == "2":
-                        continue
-                    else:
-                        print("Valid input.")
+            meaning = input(f"Please enter the meaning of finnish word {word}: ")
+            if self.custom_finnish_library[word] == meaning:
+                print("Right!")
+            else:
+                print("Sorry, the meaning is wrong.")
+                print(f"The correct meaning of {word} is {self.custom_finnish_library[word]}")
+            continue_exit = input("Do you want to continue practice?(y/n)")
+            if continue_exit == "n":
+                print("Now practice has been ended.")
+                return
+        print("Congratulations, you have practiced all your custom words.")

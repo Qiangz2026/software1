@@ -12,7 +12,7 @@ def run_challenge(player, challenge_words):
             point += 1
         else:
             print(f"Your answer is wrong and the correct meaning is {meaning}.")
-    print("Challenge is over and your score is: {point}")
+    print(f"Challenge is over and your score is: {point}")
     if point >= 4:
         print(f"Congratulations, {player.name}. You have successfully completed the challenge.")
     else:
