@@ -1,5 +1,6 @@
-#Level words list
+#Here are all word list, include level_words_list, interest_words_list and random_words_list
 
+#Level_words_list
 level_0_words = {
     "hei": "hello",
     "moi": "hi",
@@ -115,7 +116,7 @@ level_b2_words = {
     "vaikuttaa": "to influence"
 }
 
-# Interest words list
+# Interest_words_list
 nature_words = {
     "metsä": "forest",
     "järvi": "lake",
@@ -229,4 +230,38 @@ sports_words = {
     "maali": "goal",
     "voitto": "victory",
     "harjoitus": "training"
+}
+
+#random_words_list
+random_words = {
+    "ystävä": "friend",
+    "vesi": "water",
+    "aamu": "morning",
+    "kaupunki": "city",
+    "kirja": "book",
+    "matka": "trip",
+    "aurinko": "sun",
+    "perhe": "family",
+    "ravintola": "restaurant",
+    "juna": "train",
+    "metsä": "forest",
+    "kahvi": "coffee",
+    "onnellinen": "happy",
+    "koulu": "school",
+    "lippu": "ticket",
+    "järvi": "lake",
+    "ystävällinen": "friendly",
+    "musiikki": "music",
+    "joukkue": "team",
+    "tavoite": "goal",
+    "ympäristö": "environment",
+    "koti": "home",
+    "juhla": "celebration",
+    "perinne": "tradition",
+    "harjoitus": "training",
+    "mahdollisuus": "possibility",
+    "kehittää": "to develop",
+    "vastuu": "responsibility",
+    "saavuttaa": "to achieve",
+    "näkökulma": "perspective"
 }

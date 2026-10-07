@@ -1,3 +1,5 @@
+#This function saves the information of the player and exit the game successfully.
+
 from functions import menu
 import json
 

@@ -1,3 +1,8 @@
+#Here create a player class, initialized information regarding name, age, Finnish level, and personal interests.
+#Also three functions in the class. edit_information function allows player to change his information if he needs.
+#build_finnish_library function allows player to create his own finnish vocabulary lists.
+#practice_library function allows player to practice own finnish library.
+
 class Player:
     def __init__(self, name, age, finnish_level, interest):
         self.name = name
@@ -6,11 +11,29 @@ class Player:
         self.custom_finnish_library = {}
         self.interest = interest
         
-    def show_information(self):
-        print(f"Name: {self.name}")
-        print(f"Age: {self.age}")
-        print(f"Finnish level: {self.finnish_level}")
-        print(f"Interest: {self.interest}")
+    def edit_information(self):
+        while True:
+            print("Please choose the information you want to edit: ")
+            print("1. name\n2. age\n3. finnish_level\n4. interest\n5. changes finish")
+            choice = input("Please choose: ")
+            if choice == "1":
+                self.name = input("Enter a new name here: ")
+                print("The name has been changed successfully!")
+            elif choice == "2":
+                self.age = input("Enter you age here: ")
+                print("The age has been changed successfully!")
+            elif choice == "3":
+                self.finnish_level = input("Enter your current finnish_level here(0, A1, A2, B1, B2): ")
+                print("Your finnish_level information has been updated!")
+            elif choice == "4":
+                self.interest = input("Enter your current interest here(nature, culture, life, food, sports): ")
+                print("Your interest information has been updated!")
+            elif choice == "5":
+                print("OK, now all changes have finished.")
+                print(f"Your new player information:\n1. Name: {self.name}\n2. Age: {self.age}\n3. Finnish_level: {self.finnish_level}\n4. Interest: {self.interest}")
+                break
+            else:
+                print("Invalid input, please enter again.")
 
     def build_finnish_library(self):
         print("You can customize your own Finnish language library here.")
@@ -40,8 +63,7 @@ class Player:
                     if answer == "y":
                         break
                     elif answer == "n":
-                        return
-                    
+                        return   
                 else:
                     print("Sorry, the meaning is wrong.")
                     print (f"Would you like to check the correct meaning of {word}? or you want try again")
