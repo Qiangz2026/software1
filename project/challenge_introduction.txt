@@ -1,5 +1,6 @@
 Welcome to the challenge!
-We offer three types of challenges for you to choose from.
-Each challenge presents questions randomly selected from the word bank; a round consists of five questions, and you succeed by answering at least four correctly.
-For the "Level" and "Interest" challenges, you have the option to study the words in the words library before attempting the challenge or to dive straight into the challenge.
+We offer three challenge modes for you to choose from.
+Questions for each challenge are randomly selected from the challenge words library, a single round consists of five questions, and you must answer at least four correctly to succeed.
+The game presents a Finnish word, and the player must provide its English meaning. A correct answer earns a point, while an incorrect answer allows you to view the correct meaning.
+For "Level" and "Interest" challenges, you can choose to study the vocabulary list first or start the challenge immediately.
 Good luck!
