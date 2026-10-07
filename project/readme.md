@@ -1,13 +1,9 @@
-# Finnish language challenge!
+# Finnish learning and challenge game!
 
 **Qiang Zhang**
 
-# I determined the player's age and then added the game's main menu.
+# 1. Project description: This is a project for my Python programming course; the idea stems from my own experience learning Finnish.
+# The game  is a simple command-line game designed to help players learn and practice Finnish vocabulary.
+# Players can also create their own Finnish vocabulary library and practice their custom words.
 
-# I wrote the corresponding functions based on the main menu, but debugging and refinement work still need to be carried out.
-
-# Project structure: I have placed the main function, game instructions, and the Finnish word list in the project folder. Within this folder, I created a subdirectory for functions containing all the necessary function files.
-
-# Some changes of codes and add save player information and load player functions.
-
-# There are still a lot of testing work to do next.
+# 
