@@ -12,6 +12,13 @@ print(f"Welcome to {game_name}")
 player = load_player()#give the return of the function load_player to player
 if player == None:
     player = create_player()
+else:
+    print("A saved player was found.")
+    answer = input(f"Are you {player.name}?(y/n)")
+    if answer.lower() == "y":
+        print(f"Welcome back, {player.name}!")
+    elif answer.lower() == "n":
+        player = create_player()
 print("Here is the menu for you!")
 choice = menu()
 game_process = True
