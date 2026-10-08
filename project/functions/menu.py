@@ -7,5 +7,5 @@ def menu():
     print("4. pelaa: Start game")
     print("5. harjoittelu: Practice own Finnish library ")
     print("6. lopeta: Save and exit game")
-    choice = input ("Please choose: ")
+    choice = input ("Please choose(just number is ok): ")
     return choice

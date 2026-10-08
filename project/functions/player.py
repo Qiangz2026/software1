@@ -15,7 +15,7 @@ class Player:
         while True:
             print("Please choose the information you want to edit: ")
             print("1. name\n2. age\n3. finnish_level\n4. interest\n5. changes finish")
-            choice = input("Please choose: ")
+            choice = input("Please choose(just number is ok): ")
             if choice == "1":
                 self.name = input("Enter a new name here: ")
                 print("The name has been changed successfully!")
@@ -28,7 +28,7 @@ class Player:
             elif choice == "4":
                 self.interest = input("Enter your current interest here(nature, culture, life, food, sports): ")
                 print("Your interest information has been updated!")
-            elif choice == "5":
+            elif choice == "5":#Exit the loop once all modifications are complete.
                 print("OK, now all changes have finished.")
                 print(f"Your new player information:\n1. Name: {self.name}\n2. Age: {self.age}\n3. Finnish_level: {self.finnish_level}\n4. Interest: {self.interest}")
                 break
